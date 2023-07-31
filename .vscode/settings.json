@@ -2,6 +2,5 @@
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": true
-  },
-  "i18n-ally.localesPaths": ["locales"]
+  }
 }
