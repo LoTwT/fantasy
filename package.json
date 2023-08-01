@@ -12,13 +12,15 @@
     "up": "taze latest -I"
   },
   "dependencies": {
+    "@leafer-ui/node": "1.0.0-beta.7",
     "@types/node": "20.4.5",
-    "@types/react": "18.2.17",
+    "@types/react": "18.2.18",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.14",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
     "jotai": "^2.2.3",
+    "leafer-ui": "1.0.0-beta.7",
     "next": "13.4.12",
     "postcss": "8.4.27",
     "react": "18.2.0",
@@ -28,6 +30,7 @@
   },
   "devDependencies": {
     "@ayingott/eslint-config": "^0.2.7",
+    "@ayingott/sucrose": "^0.0.5",
     "@swc-jotai/react-refresh": "^0.0.8",
     "lint-staged": "^13.2.3",
     "prettier": "^3.0.0",
