@@ -5,9 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@leafer-ui/node':
-    specifier: 1.0.0-beta.7
-    version: 1.0.0-beta.7
   '@types/node':
     specifier: 20.4.5
     version: 20.4.5
@@ -403,15 +400,6 @@ packages:
       '@leafer/interface': 1.0.0-beta.7
     dev: false
 
-  /@leafer-ui/node@1.0.0-beta.7:
-    resolution: {integrity: sha512-a0F4iV6ZsKWJX/49YwYDq7seduT9jX0qBW08PVBZZTxyAo+DgMi2zw6ebxh7urr8gzsbls/dTjVHCaRugzYsmw==}
-    dependencies:
-      '@leafer-ui/core': 1.0.0-beta.7
-      '@leafer-ui/interface': 1.0.0-beta.7
-      '@leafer/interface': 1.0.0-beta.7
-      '@leafer/node': 1.0.0-beta.7
-    dev: false
-
   /@leafer-ui/paint@1.0.0-beta.7:
     resolution: {integrity: sha512-H7srXH/yhyhoHciwvcT75/7+bcYii90QHCHVQzhccsQxPnOMw/lK1ROkDqp8cDaMxV9iSeGTfUw+D2uXXrmz7w==}
     dependencies:
@@ -442,12 +430,6 @@ packages:
     dependencies:
       '@leafer-ui/core': 1.0.0-beta.7
       '@leafer/web': 1.0.0-beta.7
-    dev: false
-
-  /@leafer/canvas-node@1.0.0-beta.7:
-    resolution: {integrity: sha512-+UMCJdWzHBSMkTurCSFgZ8wWYx2uNRQykZwAC27S6WUpRybgHepee4zkHQRtF/8/QM1R1ma9K0u2/j2SjCPPsw==}
-    dependencies:
-      '@leafer/canvas': 1.0.0-beta.7
     dev: false
 
   /@leafer/canvas-web@1.0.0-beta.7:
@@ -554,10 +536,6 @@ packages:
       '@leafer/math': 1.0.0-beta.7
     dev: false
 
-  /@leafer/image-node@1.0.0-beta.7:
-    resolution: {integrity: sha512-jvp5amzPyDcZV8SgbCG3sKx/O/zyxkuc34WVJZnF+9FtCsm4G/fBqHT0D93iV5d4JZji/c4wz0CDkp9CQLqB5g==}
-    dev: false
-
   /@leafer/image-web@1.0.0-beta.7:
     resolution: {integrity: sha512-BLMguhfTeSYky5t3/Xdax97X4BjkbghITYBxz+1yAhmAR0erU9BB6U2lDHA5vgJZ+KYR9jIfCdKcVyOw7uIuUw==}
     dev: false
@@ -614,16 +592,6 @@ packages:
 
   /@leafer/math@1.0.0-beta.7:
     resolution: {integrity: sha512-EOE0QWMOAJwx67ebPVLsOnurFncX/Dyi7xTXLSwe6EC+gDTr6pleIX1+H61T0wAgl8C/Huka2ysxxtHsIxtIPQ==}
-    dev: false
-
-  /@leafer/node@1.0.0-beta.7:
-    resolution: {integrity: sha512-y6lxhIdPsv5LH4fcoNHtkERaRGn90/oYethJMr5qUlXKvMCj02bHVIdnA5Z+SnGgG+AnKPOB0pxkIcEiOJiv6A==}
-    dependencies:
-      '@leafer/canvas-node': 1.0.0-beta.7
-      '@leafer/core': 1.0.0-beta.7
-      '@leafer/image-node': 1.0.0-beta.7
-      '@leafer/interaction': 1.0.0-beta.7
-      '@leafer/partner': 1.0.0-beta.7
     dev: false
 
   /@leafer/partner@1.0.0-beta.7:

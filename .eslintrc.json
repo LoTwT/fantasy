@@ -1,3 +1,6 @@
 {
-  "extends": ["next/core-web-vitals", "@ayingott"]
+  "extends": ["next/core-web-vitals", "@ayingott"],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off"
+  }
 }
