@@ -17,6 +17,12 @@ dependencies:
   autoprefixer:
     specifier: 10.4.14
     version: 10.4.14(postcss@8.4.27)
+  clsx:
+    specifier: ^2.0.0
+    version: 2.0.0
+  dockbar:
+    specifier: ^0.1.4
+    version: 0.1.4
   eslint:
     specifier: 8.46.0
     version: 8.46.0
@@ -1664,6 +1670,11 @@ packages:
       wrap-ansi: 7.0.0
     dev: true
 
+  /clsx@2.0.0:
+    resolution: {integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==}
+    engines: {node: '>=6'}
+    dev: false
+
   /color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
     dependencies:
@@ -1819,6 +1830,10 @@ packages:
 
   /dlv@1.1.3:
     resolution: {integrity: sha512-+HlytyjlPKnIG8XuRG8WvmBP8xs8P71y+SKKS6ZXWoEgLuePxtDoUEiH7WkdePWrQ5JBpE6aoVqfZfJUQkjXwA==}
+    dev: false
+
+  /dockbar@0.1.4:
+    resolution: {integrity: sha512-UjwZq3QhEDY7N8H6qgs5dMqm5wLn/nBhEl/IyxrJezfJ4SAscgrbJC9eVz3G1GRToQyw3F7Tix8fVEu25zmBMw==}
     dev: false
 
   /doctrine@2.1.0:
