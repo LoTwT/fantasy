@@ -13,19 +13,28 @@
     "up": "taze latest -I"
   },
   "dependencies": {
+    "clsx": "^2.0.0",
+    "dockbar": "^0.1.4",
+    "jotai": "^2.3.0",
+    "leafer-ui": "1.0.0-beta.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@ayingott/eslint-config": "^0.2.7",
+    "@ayingott/sucrose": "^0.0.5",
+    "@swc-jotai/react-refresh": "^0.0.8",
+    "@types/node": "^20.4.8",
     "@types/react": "^18.2.18",
     "@types/react-dom": "^18.2.7",
+    "@unocss/reset": "^0.54.1",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "eslint": "^8.46.0",
     "lint-staged": "^13.2.3",
     "simple-git-hooks": "^2.9.0",
     "taze": "^0.11.2",
     "typescript": "^5.1.6",
+    "unocss": "^0.54.1",
     "vite": "^4.4.8"
   },
   "simple-git-hooks": {

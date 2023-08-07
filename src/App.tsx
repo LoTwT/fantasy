@@ -1,34 +1,31 @@
-import { useState } from "react"
-import reactLogo from "./assets/react.svg"
-import viteLogo from "/vite.svg"
-import "./App.css"
+import type { Nullable } from "@ayingott/sucrose"
+import { useAtom } from "jotai"
+import { Leafer } from "leafer-ui"
+import { useEffect, useRef } from "react"
+import { leaferAtom } from "./atoms"
+import DockBar from "./components/DockBar"
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const leaferRef = useRef<Nullable<HTMLDivElement>>(null)
+
+  const [leafer, setLeafer] = useAtom(leaferAtom)
+
+  useEffect(() => {
+    if (!leafer && leaferRef) {
+      setLeafer(new Leafer({ view: leaferRef.current! }))
+    }
+  }, [leaferRef?.current])
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <main className="w-full h-100vh relative">
+      <div className="w-full h-full" ref={leaferRef} />
+      <DockBar
+        dockWrapper={{
+          direction: "horizontal",
+          position: "bottom",
+        }}
+      />
+    </main>
   )
 }
 
